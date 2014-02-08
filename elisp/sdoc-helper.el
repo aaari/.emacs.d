@@ -1,0 +1,1 @@
+/usr/local/lib/sdoc/etc/sdoc-helper.el
