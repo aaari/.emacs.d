@@ -18,3 +18,6 @@
   (setq web-mode-java-offset   2)
   (setq web-mode-asp-offset    2))
 (add-hook 'web-mode-hook 'web-mode-hook)
+
+(define-key web-mode-map (kbd "C-;") nil) ;; C-; は helm のままにしておく
+(define-key web-mode-map  (kbd "C-c C-;") 'web-mode-comment-or-uncomment)

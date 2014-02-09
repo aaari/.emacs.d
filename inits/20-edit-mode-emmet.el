@@ -7,7 +7,8 @@
 
 (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2))) ;; indent はスペース2個
 (eval-after-load "emmet-mode"
-  '(define-key emmet-mode-keymap (kbd "C-j") nil)) ;; C-j は newline のままにしておく
+  '(define-key emmet-mode-keymap (kbd "C-j") nil) ;; C-j は newline のままにしておく
+)
 ;(keyboard-translate ?\C-i ?\H-i) ;;C-i と Tabの被りを回避
 ;(define-key emmet-mode-keymap (kbd "H-i") 'emmet-expand-line) ;; C-i で展開
 (define-key emmet-mode-keymap (kbd "M-i") 'emmet-expand-line) ;; C-i で展開

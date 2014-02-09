@@ -1,6 +1,10 @@
 (require 'yasnippet)
 
-(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"
+        "~/.emacs.d/elpa/yasnippet-20140106.1009/snippets"
+        ))
+
 (yas-global-mode 1)
 
 (custom-set-variables '(yas-trigger-key "TAB"))

@@ -1,4 +1,5 @@
-;; js2-modeの利用 
+;; js2-modeの利用
+;(autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\.js$" . js2-mode))
 
 ;; js2-modeでのインデント設定 
@@ -10,3 +11,4 @@
               indent-tabs-mode nil)
         (set (make-local-variable 'indent-line-function) 'js-indent-line)))
 
+(setq js2-strict-missing-semi-warning nil)
