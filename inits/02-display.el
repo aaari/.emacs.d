@@ -56,9 +56,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;全角空白、タブ、行末の空白を目立たせる;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defface my-face-tab         '((t (:foreground "Yellow" :underline t))) nil :group 'my-faces)
-(defface my-face-zenkaku-spc '((t (:background "LightBlue" :underline t))) nil :group 'my-faces)
-(defface my-face-spc-at-eol  '((t (:foreground "Red" :underline t))) nil :group 'my-faces)
+;(defface my-face-tab         '((t (:foreground "Yellow" :underline t))) nil :group 'my-faces)
+(defface my-face-tab         '((t (:foreground "#333300" :underline t))) nil :group 'my-faces)
+;(defface my-face-zenkaku-spc '((t (:background "LightBlue" :underline t))) nil :group 'my-faces)
+(defface my-face-zenkaku-spc '((t (:background "#006666" :underline t))) nil :group 'my-faces)
+;(defface my-face-spc-at-eol  '((t (:foreground "DarkRed" :underline t))) nil :group 'my-faces)
+(defface my-face-spc-at-eol  '((t (:foreground "#330000" :underline t))) nil :group 'my-faces)
 (defvar my-face-tab         'my-face-tab)
 (defvar my-face-zenkaku-spc 'my-face-zenkaku-spc)
 (defvar my-face-spc-at-eol  'my-face-spc-at-eol)

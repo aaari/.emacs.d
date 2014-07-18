@@ -15,6 +15,7 @@
     solarized-theme
     multiple-cursors
     editorconfig
+    exec-path-from-shell
     ;;    dizzee
     ))
 (let ((not-installed (loop for x in installing-package-list
