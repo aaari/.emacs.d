@@ -14,6 +14,7 @@
     helm
     solarized-theme
     multiple-cursors
+    editorconfig
     ;;    dizzee
     ))
 (let ((not-installed (loop for x in installing-package-list

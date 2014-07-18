@@ -16,7 +16,7 @@
 (helm-mode 1)
 
 ;; 文字列を入力してから検索するまでのタイムラグを設定する（デフォルトは 0.1）
-(setq helm-input-idle-delay 0.2)
+;(setq helm-input-idle-delay 0.2)
 
 
 ;; キーバインドの設定

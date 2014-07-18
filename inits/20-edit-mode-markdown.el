@@ -9,6 +9,9 @@
          ("\\.txt$" . markdown-mode)
          )
        auto-mode-alist))
+
+(setq markdown-command "/usr/local/bin/markdown")
+
 ; header level 2 折りたたみ拡張 C-i で展開
 (add-hook 'markdown-mode-hook
   (lambda()

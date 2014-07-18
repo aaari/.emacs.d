@@ -1,4 +1,17 @@
+(set-language-environment "Japanese")
 (prefer-coding-system 'utf-8)
+
+;; Macの場合のファイル名の設定
+(when (eq system-type 'darwin)
+  (require 'ucs-normalize)
+  (set-file-name-coding-system 'utf-8-hfs)
+  (setq locale-coding-system 'utf-8-hfs))
+
+;; Windowsの場合のファイル名の設定
+(when (eq system-type 'w32)
+  (set-file-name-coding-system 'cp932)
+  (setq locale-coding-system 'cp932))
+
 
 ;;;; メニュー、ツールバー消去
 ;;;;;(tool-bar-mode 0)
@@ -40,9 +53,9 @@
 (setq message-log-max 10000)
 
 ;;;サーバ起動
-;(require 'server)
-;(unless (server-running-p)
-;  (server-start))
+(require 'server)
+(unless (server-running-p)
+  (server-start))
 
 ;;;クライアントを終了するとき終了するかどうかを聞かない
 ;(remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
@@ -58,3 +71,9 @@
 
 ;;; symlinkは必ず追いかける
 ;(setq vc-follow-symlinks t)
+
+;; 時計表示
+;(display-time-mode 0)
+
+;; ファイルサイズ表示
+;(size-indication-mode 0)
