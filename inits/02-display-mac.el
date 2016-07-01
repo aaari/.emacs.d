@@ -6,9 +6,9 @@
 ;                   '(font . "shinonome16-fontset")
                    '(vertical-scroll-bars . nil) ;;スクロールバーはいらない
                    '(width . 110) ;; ウィンドウ幅
-                   '(height . 55) ;; ウィンドウの高さ
+                   '(height . 65) ;; ウィンドウの高さ
                    '(top . 0) ;;表示位置
-                   '(left . 550) ;;表示位置
+                   '(left . 750) ;;表示位置
                    )
                   initial-frame-alist)))
 (setq default-frame-alist initial-frame-alist)
@@ -25,9 +25,12 @@
 ;;;;; フォント設定 ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;fontをRictyに
-(set-face-attribute 'default nil
-                   :family "Ricty"
-                   :height 140)
-(set-fontset-font
- nil 'japanese-jisx0208
- (font-spec :family "Ricty"))
+;; (set-face-attribute 'default nil
+;;                    :family "Ricty"
+;;                    :height 140)
+;; (set-fontset-font
+;;  nil 'japanese-jisx0208
+;;  (font-spec :family "Ricty"))
+;(set-fontset-font
+; nil 'japanese-jisx0208
+; (font-spec :family "Ricty"))

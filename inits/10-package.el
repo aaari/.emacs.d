@@ -16,6 +16,8 @@
     multiple-cursors
     editorconfig
     exec-path-from-shell
+    ddskk
+    git-gutter
     ;;    dizzee
     ))
 (let ((not-installed (loop for x in installing-package-list
